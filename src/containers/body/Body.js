@@ -16,6 +16,7 @@ const Body = () => {
     useEffect(() => {
         Geocode.fromAddress(adress).then((response) => {
             const data = response.results[0].geometry.location;
+
             dispatch(appChangeCoords(data.lat, data.lng));
         });
     }, [adress]);

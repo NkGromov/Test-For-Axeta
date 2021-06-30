@@ -8,6 +8,7 @@ const APP_CHANGE_COORDS = "APP_CHANGE_COORDS";
 const initState = {
     name: "John Smith",
     adress: "portland, oregon, USA",
+    avatar: "",
     coords: {
         lat: 0,
         lng: 0,
